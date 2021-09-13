@@ -1,3 +1,3 @@
-# react-mjuhuq
+# Box-Office 
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-mjuhuq)
+A react app to search movie or actor details
