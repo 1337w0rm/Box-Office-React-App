@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import ShowGrid from '../components/shows/ShowGrid'
-import ActorGrid from '../components/actors/ActorGrid'
+import ShowGrid from '../components/shows/ShowGrid';
+import ActorGrid from '../components/actors/ActorGrid';
 import MainPageLayout from '../components/MainPageLayout';
 import { getApi } from '../misc/config.js';
 
@@ -24,16 +24,17 @@ const Home = () => {
 
   const radioChange = ev => {
     setSearch(ev.target.value);
-    // console.log(ev.target.value);
   };
 
   const renderResult = () => {
     if (result && result.length === 0) return <div>No Result Found</div>;
 
     if (result && result.length > 0)
-      return result[0].show
-        ? <ShowGrid data={result}/>
-        : <ActorGrid data={result}/>;
+      return result[0].show ? (
+        <ShowGrid data={result} />
+      ) : (
+        <ActorGrid data={result} />
+      );
     return null;
   };
 

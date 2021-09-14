@@ -1,8 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Navs from './components/Navs';
-
+import Show from './pages/Show';
 import Home from './pages/Home';
 import Starred from './pages/Starred';
 
@@ -15,6 +14,10 @@ export default function App() {
 
       <Route exact path="/starred">
         <Starred />
+      </Route>
+
+      <Route exact path="/show/:id">
+        <Show />
       </Route>
 
       <Route>404 Page Not Found</Route>
